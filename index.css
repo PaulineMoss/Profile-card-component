@@ -3,7 +3,7 @@ body{
     font-family: Kumbh Sans;
     font-size: 18px;
     color: hsl(0, 0%, 59%);
-    background-color: darkcyan;
+    background-color:hsl(185, 75%, 39%);
     background-image: url('images/bg-pattern-bottom.svg'),
     url('images/bg-pattern-top.svg');
     background-position: 43vw 30vw, -20vw -35vw;
@@ -27,7 +27,7 @@ body{
     z-index: 0;
 }
 
-#photo{
+.photo{
     position: absolute;
     border: 5px solid #FFFFFF;
     border-radius: 50%;
@@ -36,7 +36,7 @@ body{
     z-index: 1;
 }
 
-#personal-info-container{
+.personal-info-container{
     flex-direction: column;
     z-index: 1;
     margin-top: 225px;
@@ -86,3 +86,4 @@ body{
     font-size: 11px;
     margin-top: 8px;
     letter-spacing: 1px;
+}
