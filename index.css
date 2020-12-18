@@ -10,11 +10,16 @@ body{
     background-repeat: no-repeat;
 }
 
-.profile-card{
+.container{
     background-color: #FFFFFF;
-    height: 350px;
-    width: 350px;
+    background-image: url('images/bg-pattern-card.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
     border-radius: 18px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -22,27 +27,21 @@ body{
     z-index: 0;
 }
 
-.profile-card #background-picture{
-    border-top-left-radius: 18px;
-    border-top-right-radius: 18px;
-    position: absolute;
-    z-index: 0;
-}
-
 #photo{
     position: absolute;
     border: 5px solid #FFFFFF;
     border-radius: 50%;
-    margin-left: 125px;
-    margin-top: 75px;
+    margin-left: 145px;
+    margin-top: 105px;
     z-index: 1;
 }
 
-#personal-info{
-    position: absolute;
-    z-index: 1;  
-    margin-top: 200px;
-    margin-left: 100px;
+#personal-info-container{
+    flex-direction: column;
+    z-index: 1;
+    margin-top: 225px;
+    display: flex;
+    align-items: center;
 }
 
 #name{
@@ -56,41 +55,34 @@ body{
 
 #location{
     margin-top: 10px;
-    margin-left: 45px;
     font-size: 13px;
 }
 
-.stats{
-    position: absolute;
-    margin-top: 260px;
+.stats-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
     border-top: 1px solid #E7E7E7;
-    width: 100%;
-    padding-top: 20px;
+    padding-top: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.numbers span{
-    font-size: 15px;
-    margin-left: 55px;
-    padding: 5px;
+.stats-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.stats-value{
     font-weight: 700;
     color: #272935;
 }
 
-.item span{
-    padding: 3px;
-    margin-left: 50px;
-    font-size: 10px;
-    margin-top: -4px;
-}
-
-#Followers{
-    margin-left: 45px;
-}
-
-#Likes{
-    margin-left: 61px;
-}
-
-#photos{
-        margin-left: 70px;
-}
+.stats-item{
+    font-size: 11px;
+    margin-top: 8px;
+    letter-spacing: 1px;
